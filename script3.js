@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
             const audioPlayer = document.getElementById('audioPlayer');
             const lyricsContainer = document.getElementById('lyricsContainer');
             const lyricsLines = lyricsContainer.getElementsByTagName('p');
@@ -17,6 +17,7 @@
                                 lyricsLines[lastActiveIndex].classList.remove('active');
                             }
                             lyricsLines[i].classList.add('active');
+                            lyricsLines[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
                             lastActiveIndex = i;
                         }
                     }
