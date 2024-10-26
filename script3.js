@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
             const audioPlayer = document.getElementById('audioPlayer');
             const lyricsContainer = document.getElementById('lyricsContainer');
             const lyricsLines = lyricsContainer.getElementsByTagName('p');
@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             audioPlayer.addEventListener('timeupdate', updateLyrics);
         });
-
 
    // Получаем элемент уведомления
    const notification = document.getElementById('fullscreen-notification');
